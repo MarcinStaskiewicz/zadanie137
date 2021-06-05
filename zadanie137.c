@@ -38,11 +38,46 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-void pierwiastek_liniowy() {
+void pierwiastek_liniowy()
+{
+    float a,b,x;
+printf("%s \n","Podaj a ");
+if(scanf("%f",&a)==0)
+{
+
+    printf("podaj cyfre\n");
+        exit(EXIT_FAILURE);
+}
+printf("%s \n","Podaj b ");
+if(scanf("%f",&b)==0)
+{
+
+    printf("podaj cyfre\n");
+        exit(EXIT_FAILURE);
+}
+
+if ((a == 0) && (b == 0))
+{
+printf("%s","Rownanie tozsamosciowe");
+}
+else
+if (a == 0)
+{
+printf("%s","Rownanie sprzeczne");
+}
+else
+{
+x=-b/a;
+printf("%s\n" "%.2f"  "%s", "wynik rownania  - ", x,  "\n\n" );
+}
+
 
 
 }
 
+
 void pierwiastek_kwadratowy()
-{
+{ /* TODO - osoba3 */
+
+    /* TODO - w³aœciwe obliczanie pola zrealizowaæ poprzez dedykowan¹ funkcjê */
 }
